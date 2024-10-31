@@ -32,10 +32,27 @@
         },
       };
     </script>
+    <style>
+      @layer base {
+        :root {
+          --textp: #777e90;
+          --btn: black;
+          --body1: white;
+          --h1: black;
+          --divbg: #f4f5f6;
+        }
+        .dark {
+          --btn: #777e90;
+          --divbg: #585d69;
+          --h1: white;
+          --body1: #23262f;
+        }
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
     <title>vivi</title>
   </head>
-  <body>
+  <body class="body1">
     <div id="loader"></div>
     <div id="body">
       <header
@@ -48,20 +65,30 @@
         />
         <div class="flex items-center gap-[50px]">
           <ul class="hidden xl:flex gap-[30px] 2xl:gap-[70px]">
-            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+            <li
+              class="text-[h1] hover:text-[#007eff] duration-300 cursor-pointer"
+            >
               WHAT WE DO
             </li>
-            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+            <li
+              class="text-[h1] hover:text-[#007eff] duration-300 cursor-pointer"
+            >
               LEARN & SUPPORT
             </li>
-            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+            <li
+              class="text-[h1] hover:text-[#007eff] duration-300 cursor-pointer"
+            >
               RESOURCES
             </li>
-            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+            <li
+              class="text-[h1] hover:text-[#007eff] duration-300 cursor-pointer"
+            >
               ABOUT
             </li>
-            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
-              CONTACT
+            <li
+              class="text-[h1] hover:text-[#007eff] duration-300 cursor-pointer"
+            >
+              <i id="mode1" class="text-[24px] text-[] fa-solid fa-circle-half-stroke"></i>
             </li>
           </ul>
           <div class="flex items-center gap-[10px] sm:gap-[30px]">
@@ -71,7 +98,8 @@
               REQUEST A DEMO
             </button>
             <i
-              class="flex xl:hidden hover:text-[#007eff] duration-300 cursor-pointer text-[32px] fa-solid fa-bars"
+             
+              class="flex xl:hidden text-[h1] hover:text-[#007eff] duration-300 cursor-pointer text-[32px] fa-solid fa-bars"
             ></i>
           </div>
         </div>
@@ -682,9 +710,10 @@
           ></div>
         </div>
 
-        <div class="container py-[40px] flex flex-col md:flex-row items-center gap-[30px] justify-center md:justify-between z-10">
-          <div class="flex  gap-[50px] xl:gap-[200px]">
-
+        <div
+          class="container py-[40px] flex flex-col md:flex-row items-center gap-[30px] justify-center md:justify-between z-10"
+        >
+          <div class="flex gap-[50px] xl:gap-[200px]">
             <ul class="text-white text-[25px] flex flex-col gap-[10px]">
               <li>About</li>
               <li>Contact</li>
@@ -739,6 +768,5 @@
     </div>
 
     <script src="/script.js"></script>
-    <style></style>
   </body>
 </html>
