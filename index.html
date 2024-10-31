@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+            padding: {
+              DEFAULT: "25px",
+              sm: "45px",
+              lg: "100px",
+              xl: "150px",
+              "2xl": "200px",
+            },
+            extend: {
+              colors: {
+                clifford: "#da373d",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <title>vivi</title>
+  </head>
+  <body>
+    <div id="loader"></div>
+    <div id="body">
+      <header
+        class="fixed z-40 w-full bg-[white] container py-6 flex justify-between items-center"
+      >
+        <img
+          width="100"
+          src="https://www.vivi.io/wp-content/uploads/2021/10/Vivi_Logo_clr.svg"
+          alt=""
+        />
+        <div class="flex items-center gap-[50px]">
+          <ul class="hidden xl:flex gap-[30px] 2xl:gap-[70px]">
+            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+              WHAT WE DO
+            </li>
+            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+              LEARN & SUPPORT
+            </li>
+            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+              RESOURCES
+            </li>
+            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+              ABOUT
+            </li>
+            <li class="hover:text-[#007eff] duration-300 cursor-pointer">
+              CONTACT
+            </li>
+          </ul>
+          <div class="flex items-center gap-[10px] sm:gap-[30px]">
+            <button
+              class="text-[12px] font-medium rounded-md text-white py-[9px] px-4 bg-gradient-to-l from-[#007eff] to-[#0962D1]"
+            >
+              REQUEST A DEMO
+            </button>
+            <i
+              class="flex xl:hidden hover:text-[#007eff] duration-300 cursor-pointer text-[32px] fa-solid fa-bars"
+            ></i>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section
+          class="py-[100px] container flex justify-center sm:justify-normal sm:grid"
+        >
+          <div class="flex flex-col gap-[20px] xl:flex-row justify-between">
+            <div
+              class="text-center flex flex-col justify-center items-center gap-[30px] w-[340px] md:w-[400px]"
+            >
+              <h1 class="text-[40px] leading-[50px]">
+                Get more from your classroom and school displays
+              </h1>
+              <p class="text-[23px] font-light">
+                Much more than wireless screen mirroring, Vivi encourages
+                classroom engagement, builds school community and supports
+                school safety efforts.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-[20px] items-center">
+                <button
+                  class="text-[22px] font-medium rounded-md text-white hover:text-[#0962D1] border-[2px] border-[#0962D1] py-[8px] px-[24px] bg-gradient-to-l from-[#007eff] to-[#0962D1]"
+                >
+                  What We Do
+                </button>
+                <button
+                  class="text-[22px] text-[#0962D1] font-medium rounded-md duration-500 hover:text-white hover:bg-gradient-to-l from-[#007eff] to-[#0962D1] py-[8px] px-[24px] bg-transparent border-[2px] border-[#0962D1]"
+                >
+                  Request A Demo
+                </button>
+              </div>
+            </div>
+            <img
+              width="600"
+              class="rounded-2xl"
+              src="https://www.vivi.io/wp-content/uploads/2024/02/Student-Presentation-Hero.webp"
+              alt=""
+            />
+          </div>
+        </section>
+        <section
+          class="overflow-x-hidden overflow-y-hidden flex flex-col justify-center items-center relative h-[650px] bg-gradient-to-r from-[#0962D1] to-[#2e0a6c] py-[80px]"
+        >
+          <div class="hidden md:flex">
+            <div
+              class="absolute left-[-200px] top-11 z-[0] bg-[#370B6E] w-[400px] h-[400px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute left-[200px] z-[0] bg-[#9BFFDF] w-[40px] h-[40px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute left-[-50px] bottom-[20px] z-[0] bg-transparent border border-[white] w-[380px] h-[380px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute left-[-50px] bottom-0 z-[0] bg-[#9BFFDF] w-[160px] h-[160px] rounded-[50%]"
+            ></div>
+          </div>
+          <div class="hidden md:flex">
+            <div
+              class="absolute right-[160px] top-[150px] z-[0] bg-[#9BFFDF] w-[60px] h-[60px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute right-[60px] top-[50px] z-[0] bg-[#9BFFDF] w-[90px] h-[90px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute right-[-200px] bottom-[10px] z-[0] bg-[#b54ef6] w-[360px] h-[360px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute right-[50px] bottom-[-160px] z-[0] bg-transparent border border-[white] w-[280px] h-[280px] rounded-[50%]"
+            ></div>
+          </div>
+          <div class="flex items-center pt-[90px] justify-center text-center">
+            <div class="w-[340px] md:w-[460px] h-[300px]">
+              <h1 class="text-white text-[50px]">What We Do</h1>
+              <p class="text-white text-[20px]">
+                Vivi leverages a school's network of displays, in classrooms and
+                across campus, to keep students, teachers and staff engaged and
+                informed.
+              </p>
+            </div>
+          </div>
+          <div class="flex flexw\ gap-[5px] z-10 pb-[100px]">
+            <div
+              class="w-[320px] h-[295px] bg-[white] rounded-2xl hover:bg-[#007eff] duration-300 p-[30px] hover:text-[white] flex flex-col items-center gap-[10px] text-center"
+            >
+              <div
+                class="w-[70px] div h-[70px] rounded-[50%] bg-[#007eff] flex justify-center items-center"
+              >
+                <img src="/images/SVG.png" alt="" />
+              </div>
+              <h1 class="text-[20px]">Wireless Screen Mirroring</h1>
+              <p class="">
+                Create a dynamic learning environment by enabling teacher and
+                student screen sharing from anywhere in the classroom.
+              </p>
+              <button
+                class="py-1 px-2 bg-transparent border-[2px] rounded-lg border-[#007eff]"
+              >
+                Learn more
+              </button>
+            </div>
+            <div
+              class="w-[320px] h-[295px] bg-[white] rounded-2xl hover:bg-[#007eff] duration-300 p-[30px] hover:text-[white] flex flex-col items-center gap-[10px] text-center"
+            >
+              <div
+                class="w-[70px] div h-[70px] rounded-[50%] bg-[#007eff] flex justify-center items-center"
+              >
+                <img src="/images/SVG.png" alt="" />
+              </div>
+              <h1 class="text-[20px]">Wireless Screen Mirroring</h1>
+              <p class="">
+                Create a dynamic learning environment by enabling teacher and
+                student screen sharing from anywhere in the classroom.
+              </p>
+              <button
+                class="py-1 px-2 bg-transparent border-[2px] rounded-lg border-[#007eff]"
+              >
+                Learn more
+              </button>
+            </div>
+            <div
+              class="w-[320px] h-[295px] bg-[white] rounded-2xl hover:bg-[#007eff] duration-300 p-[30px] hover:text-[white] flex flex-col items-center gap-[10px] text-center"
+            >
+              <div
+                class="w-[70px] div h-[70px] rounded-[50%] bg-[#007eff] flex justify-center items-center"
+              >
+                <img src="/images/SVG.png" alt="" />
+              </div>
+              <h1 class="text-[20px]">Wireless Screen Mirroring</h1>
+              <p class="">
+                Create a dynamic learning environment by enabling teacher and
+                student screen sharing from anywhere in the classroom.
+              </p>
+              <button
+                class="py-1 px-2 bg-transparent border-[2px] rounded-lg border-[#007eff]"
+              >
+                Learn more
+              </button>
+            </div>
+            <div
+              class="w-[320px] h-[295px] bg-[white] rounded-2xl hover:bg-[#007eff] duration-300 p-[30px] hover:text-[white] flex flex-col items-center gap-[10px] text-center"
+            >
+              <div
+                class="w-[70px] div h-[70px] rounded-[50%] bg-[#007eff] flex justify-center items-center"
+              >
+                <img src="/images/SVG.png" alt="" />
+              </div>
+              <h1 class="text-[20px]">Wireless Screen Mirroring</h1>
+              <p class="">
+                Create a dynamic learning environment by enabling teacher and
+                student screen sharing from anywhere in the classroom.
+              </p>
+              <button
+                class="py-1 px-2 bg-transparent border-[2px] rounded-lg border-[#007eff]"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          class="container py-[100px] flex justify-center sm:justify-normal sm:grid"
+        >
+          <div
+            class="flex flex-wrap text-center md:text-start gap-[40px] justify-between items-center"
+          >
+            <div class="md:w-[480px] flex flex-col gap-[30px]">
+              <h1 class="text-[25px] leading-4 text-[#007eff]">
+                You're in great company
+              </h1>
+              <h1 class="text-[30px] sm:text-[40px] font-normal">
+                Trusted by over 2,400 schools, 120,000 classrooms, and 825,000
+                teachers and students.
+              </h1>
+            </div>
+            <div class="flex flex-col gap-[30px] items-center justify-center">
+              <div
+                class="flex items-center gap-[40px] flex-wrap justify-center"
+              >
+                <img
+                  width="120px"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/mvla_uhsd_logo_grey.png"
+                  alt=""
+                />
+                <img
+                  width="200px"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/St-Michaels-College-Logo_grey.png"
+                  alt=""
+                />
+                <img
+                  width="200px"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/Grand-Rapids-Public-Schools_grey.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex items-center gap-[40px] flex-wrap justify-center"
+              >
+                <img
+                  width="120px"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/mvla_uhsd_logo_grey.png"
+                  alt=""
+                />
+                <img
+                  width="200px"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/St-Michaels-College-Logo_grey.png"
+                  alt=""
+                />
+                <img
+                  width="200px"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/Grand-Rapids-Public-Schools_grey.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex justify-center sm:justify-normal sm:grid">
+          <div class="relative hidden xl:grid">
+            <div class="bg-white h-[200px]"></div>
+            <div class="flex">
+              <div
+                class="absolute z-10 w-[375px] h-[550px] top-[5%] right-[11%] flex flex-col justify-cente py-[10px] items-center rounded-2xl bg-[#007eff]"
+              >
+                <img
+                  width="350"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/classrom-engagement.png"
+                  alt=""
+                />
+                <div class="px-[30px] w-[375px] flex flex-col gap-[30px]">
+                  <h1 class="text-[48px] text-white">Classroom Engagement</h1>
+                  <p class="text-white">
+                    Give your teachers the freedom to teach from anywhere in the
+                    classroom and keep students actively involved, while
+                    maintaining control of the classroom display
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute z-10 w-[375px] h-[550px] top-[5%] left-[38%] flex flex-col justify-cente py-[10px] items-center rounded-2xl bg-[#007eff]"
+              >
+                <img
+                  width="350"
+                  src="https://www.vivi.io/wp-content/uploads/2024/02/classrom-engagement.png"
+                  alt=""
+                />
+                <div class="px-[30px] w-[375px] flex flex-col gap-[30px]">
+                  <h1 class="text-[48px] text-white">Classroom Engagement</h1>
+                  <p class="text-white">
+                    Give your teachers the freedom to teach from anywhere in the
+                    classroom and keep students actively involved, while
+                    maintaining control of the classroom display
+                  </p>
+                </div>
+              </div>
+              <div class="flex">
+                <div
+                  class="absolute z-10 w-[375px] h-[550px] top-[5%] left-[12%] flex flex-col justify-cente py-[10px] items-center rounded-2xl bg-[#007eff]"
+                >
+                  <img
+                    width="350"
+                    src="https://www.vivi.io/wp-content/uploads/2024/02/classrom-engagement.png"
+                    alt=""
+                  />
+                  <div class="px-[30px] w-[375px] flex flex-col gap-[30px]">
+                    <h1 class="text-[48px] text-white">Classroom Engagement</h1>
+                    <p class="text-white">
+                      Give your teachers the freedom to teach from anywhere in
+                      the classroom and keep students actively involved, while
+                      maintaining control of the classroom display
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full bg-gradient-to-r from-[#0962D1] to-[#2e0a6c] py-[80px] h-[550px]"
+            ></div>
+          </div>
+        </section>
+        <section
+          class="container bg-gradient-to-r from-[#0962D1] to-[#2e0a6c] flex justify-center items-center h-[800px] xl:h-[450px]"
+        >
+          <div class="flex flex-col xl:flex-row justify-between gap-[60px]">
+            <div class="flex flex-col gap-[10px]">
+              <div
+                class="flex gap-[40px] items-center w-[375px] sm:w-[580px] rounded-2xl bg-white px-[60px] h-[220px] sm:h-[120px]"
+              >
+                <div
+                  class="w-[50px] h-[50px] flex items-center justify-center rounded-[50%] bg-[#2e0a6c]"
+                >
+                  <i class="text-[20px] text-white fa-solid fa-star"></i>
+                </div>
+                <div class="flex flex-col gap-[6px]">
+                  <h1 class="text-[23px] font-normal">
+                    Connected to tools you already use
+                  </h1>
+                  <p class="font-light">
+                    play powerpoints, Google Slides , vidios and other resourcse
+                    with just a click
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-[40px] items-center w-[375px] sm:w-[580px] rounded-2xl bg-[#2e0a6c] px-[60px] h-[220px] sm:h-[120px]"
+              >
+                <div
+                  class="w-[50px] h-[50px] flex items-center justify-center rounded-[50%] bg-white"
+                >
+                  <i class="text-[25px] text-[#2e0a6c] fa-solid fa-star"></i>
+                </div>
+                <div class="flex flex-col gap-[6px]">
+                  <h1 class="text-[23px] font-normal text-white">
+                    Connected to tools you already use
+                  </h1>
+                  <p class="font-light text-white">
+                    play powerpoints, Google Slides , vidios and other resourcse
+                    with just a click
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex gap-[40px] items-center w-[375px] sm:w-[580px] rounded-2xl bg-[#2e0a6c] px-[60px] h-[220px] sm:h-[120px]"
+              >
+                <div
+                  class="w-[50px] h-[50px] flex items-center justify-center rounded-[50%] bg-[white]"
+                >
+                  <i class="text-[25px] text-[#2e0a6c] fa-solid fa-star"></i>
+                </div>
+                <div class="flex flex-col gap-[6px]">
+                  <h1 class="text-[23px] font-normal text-white">
+                    Connected to tools you already use
+                  </h1>
+                  <p class="font-light text-white">
+                    play powerpoints, Google Slides , vidios and other resourcse
+                    with just a click
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              class="rounded-2xl hidden sm:flex"
+              src="https://www.vivi.io/wp-content/uploads/2024/02/Play_content_Onboarding.gif"
+              alt=""
+            />
+          </div>
+        </section>
+        <section class="container py-[100px]">
+          <div
+            class="flex flex-col items-center text-center justify-center gap-[20px]"
+          >
+            <p>WHAT OUR CUSTOMERS SAY:</p>
+            <div class="bg-[#4fe6b5] w-[80px] h-[1px]"></div>
+            <div class="text-start">
+              <!-- <h1 class="text-[60px] h-[40px]  text-[#4fe6b5]">``</h1> -->
+            </div>
+            <h1 class="text-[40px]">
+              It just works. <br />
+              It has everything we need and more.
+            </h1>
+            <!-- <h1 class="text-[60px] h-[40px] text-[#4fe6b5]">``</h1> -->
+            <div>
+              <p>Bob Fishtrom</p>
+              <p class="text-[#646464]">
+                Director of Information Technology Services
+              </p>
+              <p>Mountain View Los Altos High School District (California)</p>
+            </div>
+            <button class="bg-[#9BFFDF] py-2 px-3 rounded-md font-medium">
+              View their story
+            </button>
+          </div>
+        </section>
+        <section
+          class="relative h-[900px] px-3 flex items-center justify-center overflow-x-hidden overflow-y-hidden bg-gradient-to-r py-[30px] from-[#0962D1] to-[#2e0a6c]"
+        >
+          <div class="hidden md:flex">
+            <div
+              class="absolute left-[-200px] top-11 z-[0] bg-[#370B6E] w-[400px] h-[400px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute left-[200px] z-[0] bg-[#9BFFDF] w-[40px] h-[40px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute left-[-50px] bottom-[20px] z-[0] bg-transparent border border-[white] w-[380px] h-[380px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute left-[-50px] bottom-0 z-[0] bg-[#9BFFDF] w-[160px] h-[160px] rounded-[50%]"
+            ></div>
+          </div>
+          <div class="hidden md:flex">
+            <div
+              class="absolute right-[160px] top-[150px] z-[0] bg-[#9BFFDF] w-[60px] h-[60px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute right-[60px] top-[50px] z-[0] bg-[#9BFFDF] w-[90px] h-[90px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute right-[-200px] bottom-[10px] z-[0] bg-[#b54ef6] w-[360px] h-[360px] rounded-[50%]"
+            ></div>
+            <div
+              class="absolute right-[50px] bottom-[-160px] z-[0] bg-transparent border border-[white] w-[280px] h-[280px] rounded-[50%]"
+            ></div>
+          </div>
+          <div class="flex flex-col items-center gap-[50px]">
+            <div
+              class="w-[1350px] pt-[50px] rounded-2xl h-[0px] md:h-[600px] bg-[white] z-10 flex flex-col justify-between"
+            >
+              <div
+                class="hidden md:flex justify-between px-[50px] flex-col md:flex-row gap-[30px] items-end"
+              >
+                <div class="flex flex-col gap-[50px]">
+                  <h1 class="text-[#007eff] text-[40px] font-semibold">
+                    Our Latest Updates:
+                  </h1>
+                  <div class="flex items-center gap-[40px]">
+                    <i
+                      class="fa-solid fa-arrow-left text-[30px] hidden md:flex"
+                    ></i>
+                    <div class="w-[400px] flex flex-col gap-[20px]">
+                      <h1 class="text-[22px] font-semibold">
+                        Multi-zone Layouts for Digital Signage
+                      </h1>
+                      <p>
+                        Vivi Digital Signage now supports Layouts, allowing you
+                        to break your signage display into Zones and show your
+                        signage content alongside widgets like Weather, Clocks,
+                        and Timers--giving your signage that extra wow factor
+                        for students, staff, and families
+                      </p>
+                      <span
+                        class="text-[18px] cursor-pointer text-[#007eff] font-medium"
+                        >learn More</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-[40px] items-center">
+                  <img
+                    width="500"
+                    src="https://www.vivi.io/wp-content/uploads/2024/07/MZL.gif"
+                    alt=""
+                  />
+                  <i
+                    class="fa-solid fa-arrow-right text-[30px] hidden md:flex"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="hidden px-[50px] w-full md:flex justify-between items-center rounded-bl-2xl rounded-br-2xl h-[130px] bg-[#007eff]"
+              >
+                <h1 class="text-white text-[30px] font-semibold">
+                  Download the latest app & firmware
+                </h1>
+                <button class="bg-white text-[#007eff] px-5 py-2 rounded-md">
+                  Download
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-col md:flex-row items-center justify-between z-10 gap-[100px]"
+            >
+              <h1 class="text-[40px] text-white pt-[80px] md:pt-[0px]">
+                Recognitions:
+              </h1>
+              <div class="flex flex-col md:flex-row gap-[50px]">
+                <img
+                  width="140"
+                  src="https://www.vivi.io/wp-content/uploads/2024/09/Tech-Learning-Awards-of-Excellence-Back-to-School-2024-Awards24-1-150x150.png"
+                  alt=""
+                />
+                <img
+                  width="140"
+                  src="https://www.vivi.io/wp-content/uploads/2024/09/Tech-Learning-Awards-of-Excellence-Back-to-School-2024-Awards24-1-150x150.png"
+                  alt=""
+                />
+                <img
+                  width="140"
+                  src="https://www.vivi.io/wp-content/uploads/2024/09/ST4S_Badge_2023_Colour-1-272x300.png"
+                  alt=""
+                />
+                <img
+                  width="140"
+                  src="https://www.vivi.io/wp-content/uploads/2024/08/TE-Service-Provider-Awards-2024-300x300.png"
+                  alt=""
+                />
+                <img
+                  width="140"
+                  src="https://www.vivi.io/wp-content/uploads/2024/06/ISTEBOS_2024_Winner_Dark-300x248.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container py-[50px]">
+          <div class="flex flex-col items-start gap-[50px]">
+            <h1 class="text-[40px] font-medium">Learn More</h1>
+            <div
+              class="flex flex-wrap xl:flex-nowrap xl:flex-row justify-between"
+            >
+              <div
+                class="flex flex-col gap-[15px] relative w-[380px] p-[30px] h-[500px] rounded-3xl"
+              >
+                <img
+                  width="370"
+                  class="rounded-tr-3xl rounded-tl-3xl"
+                  src="https://www.vivi.io/wp-content/uploads/2024/10/AdobeStock_408586663.jpeg"
+                  alt=""
+                />
+                <div class="flex flex-col gap-[10px]">
+                  <h1 class="text-[#2e0a6c] text-[15px]">
+                    EMERGANCY ALERTS | EDUCATION INSIGHTS
+                  </h1>
+                  <p class="text-[20px] font-semibold">
+                    Eseential Tips for Safer Schools: <br />
+                    Insights from Industry Leaders
+                  </p>
+                  <p>
+                    Safe Schools Week may have passed, but the mission to create
+                    secure learning environments continues year-round. Whether
+                    you’re a school…
+                  </p>
+                  <span class="absolute bottom-[0px] font-bold text-[16px]"
+                    >READ MORE</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-[15px] relative w-[380px] p-[30px] h-[500px] rounded-3xl"
+              >
+                <img
+                  width="370"
+                  class="rounded-tr-3xl rounded-tl-3xl"
+                  src="https://www.vivi.io/wp-content/uploads/2024/10/AdobeStock_408586663.jpeg"
+                  alt=""
+                />
+                <div class="flex flex-col gap-[10px]">
+                  <h1 class="text-[#2e0a6c] text-[15px]">
+                    EMERGANCY ALERTS | EDUCATION INSIGHTS
+                  </h1>
+                  <p class="text-[20px] font-semibold">
+                    Eseential Tips for Safer Schools: <br />
+                    Insights from Industry Leaders
+                  </p>
+                  <p>
+                    Safe Schools Week may have passed, but the mission to create
+                    secure learning environments continues year-round. Whether
+                    you’re a school…
+                  </p>
+                  <span class="absolute bottom-[0px] font-bold text-[16px]"
+                    >READ MORE</span
+                  >
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-[15px] relative w-[380px] p-[30px] h-[500px] rounded-3xl"
+              >
+                <img
+                  width="370"
+                  class="rounded-tr-3xl rounded-tl-3xl"
+                  src="https://www.vivi.io/wp-content/uploads/2024/10/AdobeStock_408586663.jpeg"
+                  alt=""
+                />
+                <div class="flex flex-col gap-[10px]">
+                  <h1 class="text-[#2e0a6c] text-[15px]">
+                    EMERGANCY ALERTS | EDUCATION INSIGHTS
+                  </h1>
+                  <p class="text-[20px] font-semibold">
+                    Eseential Tips for Safer Schools: <br />
+                    Insights from Industry Leaders
+                  </p>
+                  <p>
+                    Safe Schools Week may have passed, but the mission to create
+                    secure learning environments continues year-round. Whether
+                    you’re a school…
+                  </p>
+                  <span class="absolute bottom-[0px] font-bold text-[16px]"
+                    >READ MORE</span
+                  >
+                </div>
+              </div>
+            </div>
+            <button class="px-7 py-2 rounded-md text-white bg-[#007eff]">
+              READ THE BLOG
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="relative bg-[#2e0a6c] h-[500px] overflow-x-hidden overflow-y-hidden flex flex-col"
+      >
+        <div class="hidden md:flex">
+          <div
+            class="absolute left-[20px] bottom-[190px] z-[0] bg-[#b54ef6] w-[30px] h-[30px] rounded-[50%]"
+          ></div>
+          <div
+            class="absolute left-[-50px] bottom-0 z-[0] bg-[#007eff] w-[160px] h-[160px] rounded-[50%]"
+          ></div>
+        </div>
+        <div class="hidden md:flex">
+          <div
+            class="absolute right-[60px] top-[50px] z-[0] bg-[#9BFFDF] w-[40px] h-[40px] rounded-[50%]"
+          ></div>
+          <div
+            class="absolute right-[-200px] bottom-[10px] z-[0] bg-[#b54ef6] w-[360px] h-[360px] rounded-[50%]"
+          ></div>
+        </div>
+
+        <div class="container py-[40px] flex justify-between z-10">
+          <ul class="text-white text-[25px] flex flex-col gap-[10px]">
+            <li>About</li>
+            <li>Contact</li>
+            <li>Careers</li>
+            <li>Downloads</li>
+            <li>Tech Support</li>
+            <li>Training</li>
+          </ul>
+          <ul class="text-white text-[25px] flex flex-col gap-[10px]">
+            <li>How It Works</li>
+            <li>Compare Vivi</li>
+            <li>Partnerships</li>
+            <li>Join the ViviEC</li>
+            <li>Resellers</li>
+            <li>Blog</li>
+          </ul>
+          <div>
+            <h1 class="text-white text-[23px]">Join our mailing list</h1>
+            <p class="text-white">For monthly classroom technology resources.</p>
+            <div class="flex gap-[-10px] items-center py-[20px]  rounded-md">
+              <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="p-3 w-[200px] text-black rounded-l-md focus:outline-none"
+                  />
+                  <button class="bg-blue-500 text-white px-4 py-3 rounded-r-md hover:bg-blue-600">
+                      Subscribe
+                  </button>
+          </div>
+           <h1 class="text-white text-[20px]">Follow us</h1>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/script.js"></script>
+    <style></style>
+  </body>
+</html>

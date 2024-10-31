@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto"
+}
+
+:root {
+    --primaryBlue: #007eff;
+    --primaryGreen: #4fe6b5;
+    --secondaryGreen: #9BFFDF;
+    --secondaryBlue: #8BC6FF;
+    --primaryPurple: #b54ef6;
+    --primaryDarkPurple: #2e0a6c;
+    --secondaryPurple: #D087EE;
+    --textClr: #000000;
+    --linkTransition: all 600ms ease;
+    --tipsPurple: #554D89;
+    --primary-Blue: #1171e9;
+    --primary-DarkBlue: #0962D1;
+    --primary-DarkPurple: #370B6E;
+    --primary-Text-Black: #282828;
+    --Secondary-Fuchsia: #9A34D8;
+}
