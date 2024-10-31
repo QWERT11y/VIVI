@@ -1,0 +1,5 @@
+{
+    "editor.wordWrap": "off",
+    "git.defaultBranchName": "main",
+    "terminal.integrated.allowChords": false
+}
